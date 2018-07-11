@@ -8,11 +8,19 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
 
-    <title>MR.ERROR17</title>
+    <title><%=title%></title>
   </head>
   <body>
       <div class="container">
-        <h1 class="display-4 jumbotron">Hi I'm Express</h1>
+        <h1 class="display-4 jumbotron">Hi I'm Express by <%=title%></h1>
+         <ul>
+           <%frinds.forEach(i=>{ %>
+              
+            <i><%=i%></i><br>
+
+          <%})%>
+         </ul>
+        
       </div>
    
 
